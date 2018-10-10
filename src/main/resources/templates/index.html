@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form 
+	  class="form-horizontal" 
+	  id="form_table" 
+	  action="/sms/page/batchImport" 
+	  th:action="@{/sms/page/batchImport}" 
+	  enctype="multipart/form-data" 
+	  method="post">
+		<input class="form-input" type="file" name="filename"></input>
+		<br/>	
+		<button type="submit" class="btn">开始导入</button>
+	</form>
+</body>
+</html>
